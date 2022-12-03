@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+input {
+  max-width: 526px;
+}
+.btn-success {
+  --bs-btn-bg: #2acc8c !important;
+  --bs-btn-border-color: #2acc8c !important;
+  --bs-btn-hover-bg: #2fbe85 !important;
+  --bs-btn-hover-border-color: #2fbe85 !important;
+  --bs-btn-active-bg: #23996a !important;
+  --bs-btn-active-border-color: #27aa75 !important;
+}
+.btn-primary {
+  --bs-btn-bg: #3284f4 !important;
+  --bs-btn-border-color: #3284f4 !important;
+  --bs-btn-hover-bg: #1270f3 !important;
+  --bs-btn-hover-border-color: #1270f3 !important;
+  --bs-btn-active-bg: #3284f4 !important;
+  --bs-btn-active-border-color: #3284f4 !important;
+}
+
+#formAdd .btn-success {
+  height: 42px;
+  width: 42px;
+}
+
+.card {
+  --bs-card-border-radius: 20px !important;
+  overflow: hidden;
+}
+.card.card-category {
+    width: 176px;
+}
+.card-category {
+  height: 216px !important;
+  transition: 0.2s ease-in-out;
+}
+
+.card-category:hover {
+  transform: scale(1.02);
+  transition: 0.2s ease-in-out;
+}
+.category-female {
+  background-image: url("../img/Category-female.png");
+}
+.category-male {
+  background-image: url("../img/Category-male.png");
+}
+.category-male,
+.category-female {
+  background-position: bottom center;
+  background-repeat: no-repeat;
+}
+
+.task-card {
+  background: url("../img/bocci-si.png") no-repeat;
+  background-position: bottom right;
+  background-origin: border-box;
+  background-size: 100px;
+  min-height: 150px;
+}
+.border-danger {
+  --bs-border-opacity: 0 !important;
+  transition: 0.2s ease-in-out;
+}
+.task-card:hover.border-danger {
+  --bs-border-opacity: 0.2 !important;
+  transition: 0.2s ease-in-out;
+}
+
+.close-btn {
+  --bs-btn-border-color: none !important;
+  --bs-btn-hover-color: #fac1c6;
+  --bs-btn-color: #2acc8c !important;
+}
+
+/* Animate */
+
+#formAdd .animate__fadeInDown {
+  animation-delay: 150ms;
+}
+
+#menu .row .animate__fadeInDown {
+  animation-delay: 200ms;
+}
+
+#menu .row .animate__fadeInLeft:first-child {
+  animation-delay: 100ms;
+}
+#menu .row .animate__fadeInLeft:last-child {
+  animation-delay: 200ms;
+}
+
+#TodoList {
+    transition: .5s ease-in-out;
+}
