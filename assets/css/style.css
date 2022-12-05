@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Rubik&display=swap');
 
 * {
     font-family: 'Poppins', sans-serif;
@@ -7,13 +7,17 @@ body {
     overflow-x: hidden;
 }
 .splash-heading h1{
-    color: #2e71ce /*alternate 3284f4*/;
+    color: #2e71ce; /*alternate 3284f4*/
 }
-.splash-text{
-    color: #094394;
+.splash-text p{
+    color: #1f5196;
+    font-family: 'Rubik', sans-serif;
 }
 .splash-heading u{
     color: #2acc8c;
+}
+.splash-image {
+    max-width: 28rem;
 }
 
 .btn {
@@ -21,7 +25,7 @@ body {
     color: white !important;
     --bs-btn-hover-bg: #2acc8c;
     --bs-btn-active-bg: #1da871;
-    letter-spacing: 1.5px;
+    letter-spacing: 0.1rem;
 }
 
 .btn:hover {

@@ -3,8 +3,17 @@
 * {
   font-family: "Poppins", sans-serif;
 }
-input {
-  max-width: 526px;
+input[type="text"] {
+  max-width: 10rem;
+  transition-property: max-width;
+  transition-duration: .35s;
+  transition-timing-function: ease-in-out;
+}
+input[type="text"]:focus, input[type="text"]:hover  {
+  max-width: 33rem;
+  transition-property: max-width;
+  transition-duration: .35s;
+  transition-timing-function: ease-in-out;
 }
 .btn-success {
   --bs-btn-bg: #2acc8c !important;
@@ -24,8 +33,8 @@ input {
 }
 
 #formAdd .btn-success {
-  height: 42px;
-  width: 42px;
+  height: 2.625rem;
+  width: 2.625rem;
 }
 
 .card {
@@ -33,15 +42,21 @@ input {
   overflow: hidden;
 }
 .card.card-category {
-    width: 176px;
+  width: 10rem;
+  height: 9rem !important;
 }
-.card-category {
-  height: 216px !important;
+.task-card, .card-category {
   transition: 0.2s ease-in-out;
 }
 
+.task-card:hover {
+  transform: scale(1.01);
+  box-shadow: 0 .125rem .25rem rgba(255, 0, 0, 0.075)!important;;
+  transition: 0.2s ease-in-out;
+}
 .card-category:hover {
   transform: scale(1.02);
+  box-shadow: 0 .125rem .25rem rgba(255, 0, 0, 0.075)!important;;
   transition: 0.2s ease-in-out;
 }
 .category-female {
@@ -74,8 +89,8 @@ input {
 
 .close-btn {
   --bs-btn-border-color: none !important;
-  --bs-btn-hover-color: #fac1c6;
-  --bs-btn-color: #2acc8c !important;
+  --bs-btn-hover-color: #2acc8c;
+  --bs-btn-color: #fc746c !important;
 }
 
 /* Animate */
