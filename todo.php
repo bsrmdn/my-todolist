@@ -133,7 +133,7 @@ $length =  mysqli_affected_rows($con);
                 </div>
 
                 <!-- Task -->
-                <div id="taskList" class="d-none animate__animated row g-2">
+                <div id="taskList" class="d-block animate__animated row g-2">
                 <?php while ($row = mysqli_fetch_array($tasks)) { ?>
                     <div class="col-12 animate__animated animate__fadeInDown">
                         <div class="animate__animated animate__fadeInDown card task-card border-danger shadow-sm">
@@ -153,7 +153,7 @@ $length =  mysqli_affected_rows($con);
                 <?php }; ?>
             </div>
             <div class="col-12 text-center animate__animated animate__fadeInDown">
-                <a id="showTaskBtn" class="btn border-0 text-danger" onclick="showElement('taskList'); toggleInnerHTML('showTaskBtn')">Show task</a>
+                <a id="showTaskBtn" class="btn border-0 text-danger" onclick="showElement('taskList'); toggleInnerHTML('showTaskBtn')">Hide Task</a>
             </div>
                 <!-- Task\ -->
             </div>
